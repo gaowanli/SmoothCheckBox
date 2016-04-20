@@ -1,7 +1,5 @@
 # SmoothCheckBox
-The custom CheckBox with animation for iOS. 模仿 [Android 版](https://github.com/andyxialm/SmoothCheckBox)
+fork自[broccolii](https://github.com/broccolii/SmoothCheckBox)，觉得写的不错，学习了一下，添加了叉叉的效果
 
 ### GIF:
-![](https://raw.githubusercontent.com/broccolii/SmoothCheckBox/master/GIF/Gif.mov.gif)
-
-
+![](https://github.com/gaowanli/SmoothCheckBox/blob/master/GIF/Gif.mov.gif)
