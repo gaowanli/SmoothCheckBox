@@ -21,9 +21,15 @@
 }
 
 - (void)addSmoothCheckBox {
-    SmoothCheckBox *checkBox = [[SmoothCheckBox alloc] initWithSideWidth:50];
-    checkBox.center = self.view.center;
-    [self.view addSubview:checkBox];
+    SmoothCheckBox *checkBox1 = [[SmoothCheckBox alloc] initWithSideWidth:100];
+    checkBox1.center = self.view.center;
+    checkBox1.style = CheckBoxStyleTick;
+    [self.view addSubview:checkBox1];
+    
+    SmoothCheckBox *checkBox2 = [[SmoothCheckBox alloc] initWithSideWidth:100];
+    checkBox2.center = CGPointMake(self.view.center.x, self.view.center.y + 120);
+    checkBox2.style = CheckBoxStyleClose;
+    [self.view addSubview:checkBox2];
 }
 
 @end

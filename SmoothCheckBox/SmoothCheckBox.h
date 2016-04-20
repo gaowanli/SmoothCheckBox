@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+typedef NS_ENUM(NSUInteger, CheckBoxStyle) {
+    CheckBoxStyleTick = 999,
+    CheckBoxStyleClose
+};
+
 @interface SmoothCheckBox : UIView
 // 边长
 @property (nonatomic, assign) CGFloat sideWidth;
@@ -23,6 +28,8 @@
 @property (nonatomic, strong) UIColor *uncheckedBorderColor;
 // 只读属性
 @property (nonatomic, assign, readonly) BOOL isChecked;
+
+@property (nonatomic, assign) CheckBoxStyle style;
 
 - (instancetype)initWithSideWidth:(CGFloat)sideWidth;
 
